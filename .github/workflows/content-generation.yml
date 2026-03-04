@@ -1,0 +1,39 @@
+name: AI Content Generation
+
+on:
+  schedule:
+    # 每天UTC时间08:00（雅典时间10:00）自动生成新内容
+    - cron: '0 8 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install axios cheerio marked
+      
+      - name: Generate AI tool reviews
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          cd scripts
+          node generate-content.js
+      
+      - name: Commit and push generated content
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _posts/
+          git commit -m "Auto-generated: New AI tool reviews [skip ci]" || echo "No changes to commit"
+          git push

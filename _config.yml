@@ -1,0 +1,99 @@
+# AI Tools Review 网站配置
+title: "AI Tools Review & Recommendations"
+description: "权威AI工具评测与推荐 - 帮助开发者、营销人员和创业者选择最佳AI工具"
+baseurl: "" # 子目录路径，如果部署在子目录
+url: "https://dean-ai-tools.github.io" # 生产环境URL
+
+# 构建设置
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+timezone: Europe/Athens
+
+# 作者信息
+author:
+  name: "Dean"
+  email: "" # 可选
+  twitter: "DeanZ520"
+  linkedin: "齐恩-张-1512453b3"
+  bio: "AI工具专家，专注于帮助技术从业者选择最佳工具"
+
+# SEO设置
+google_analytics: "" # 稍后添加
+google_site_verification: "" # 稍后添加
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - .github/
+
+# 包含文件
+include:
+  - _pages
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      share: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# 分类设置
+category_dir: categories
+tag_dir: tags
+
+# 分页
+paginate: 10
+paginate_path: "/page:num/"
+
+# 社交链接
+social:
+  twitter: "DeanZ520"
+  linkedin: "齐恩-张-1512453b3"
+  github: "dean-ai-tools"
+
+# 网站功能
+features:
+  comments: false # 暂时关闭评论
+  search: true
+  dark_mode: true
+  reading_time: true
+
+# 联盟信息
+affiliate_disclosure: |
+  **免责声明**: 本站包含联盟链接。当您通过我们的链接购买时，我们可能会获得佣金，这有助于支持本站运营，但不会增加您的成本。我们只推荐我们真正相信的产品。
+
+# 颜色主题
+theme:
+  primary: "#3B82F6" # 蓝色
+  secondary: "#10B981" # 绿色
+  accent: "#8B5CF6" # 紫色
+  background: "#FFFFFF"
+  text: "#1F2937"
+
+# 优化设置
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false

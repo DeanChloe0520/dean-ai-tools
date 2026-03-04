@@ -1,0 +1,158 @@
+# 高佣金AI工具联盟计划列表
+# 优先级：佣金比例 > 产品需求 > 注册难度
+
+tools:
+  # 顶级优先级（立即注册）
+  - name: "GitHub Copilot"
+    category: "开发者工具"
+    description: "AI代码助手，提高开发效率"
+    commission: "20-30% 月费佣金"
+    difficulty: "中等"
+    url: "https://github.com/features/copilot"
+    affiliate_url: "https://github.com/marketplace/copilot/affiliate"
+    priority: 1
+    notes: "开发者刚需，高续费率"
+    
+  - name: "ChatGPT Plus"
+    category: "AI助手"
+    description: "高级AI对话助手，GPT-4访问"
+    commission: "10-20% 月费佣金"
+    difficulty: "低"
+    url: "https://chat.openai.com/plus"
+    affiliate_url: "https://openai.com/affiliate-program"
+    priority: 1
+    notes: "知名度高，转化容易"
+    
+  - name: "Midjourney"
+    category: "AI图像生成"
+    description: "最先进的AI图像生成工具"
+    commission: "15-25% 月费佣金"
+    difficulty: "中等"
+    url: "https://www.midjourney.com"
+    affiliate_url: "https://www.midjourney.com/affiliate"
+    priority: 1
+    notes: "创意工作者刚需"
+    
+  # 高优先级（本周注册）
+  - name: "Jasper.ai"
+    category: "AI写作"
+    description: "企业级AI写作助手"
+    commission: "30-40% 月费佣金"
+    difficulty: "低"
+    url: "https://www.jasper.ai"
+    affiliate_url: "https://www.jasper.ai/affiliate"
+    priority: 2
+    notes: "高佣金，营销人员需求大"
+    
+  - name: "Copy.ai"
+    category: "AI文案"
+    description: "营销文案生成工具"
+    commission: "25-35% 月费佣金"
+    difficulty: "低"
+    url: "https://www.copy.ai"
+    affiliate_url: "https://www.copy.ai/affiliate"
+    priority: 2
+    notes: "中小企业刚需"
+    
+  - name: "Surfer SEO"
+    category: "SEO工具"
+    description: "AI驱动的SEO优化工具"
+    commission: "40-50% 月费佣金"
+    difficulty: "中等"
+    url: "https://surferseo.com"
+    affiliate_url: "https://surferseo.com/affiliate"
+    priority: 2
+    notes: "极高佣金，SEO刚需"
+    
+  # 中等优先级（下周转）
+  - name: "Canva Pro"
+    category: "设计工具"
+    description: "AI增强的设计平台"
+    commission: "20-30% 年费佣金"
+    difficulty: "低"
+    url: "https://www.canva.com/pro"
+    affiliate_url: "https://www.canva.com/affiliate"
+    priority: 3
+    notes: "用户基数大，转化率高"
+    
+  - name: "Notion AI"
+    category: "生产力工具"
+    description: "AI增强的笔记和工作区"
+    commission: "15-25% 月费佣金"
+    difficulty: "低"
+    url: "https://www.notion.so/product/ai"
+    affiliate_url: "https://www.notion.so/affiliate"
+    priority: 3
+    notes: "团队协作刚需"
+    
+  - name: "Grammarly Premium"
+    category: "写作辅助"
+    description: "AI语法检查和写作建议"
+    commission: "20-30% 年费佣金"
+    difficulty: "低"
+    url: "https://www.grammarly.com/premium"
+    affiliate_url: "https://www.grammarly.com/affiliate"
+    priority: 3
+    notes: "学生和专业人士刚需"
+    
+  # 扩展工具（后续添加）
+  - name: "SEMrush"
+    category: "SEO营销"
+    description: "全面的SEO和营销工具包"
+    commission: "40-50% 月费佣金"
+    difficulty: "高"
+    url: "https://www.semrush.com"
+    affiliate_url: "https://www.semrush.com/affiliate"
+    priority: 4
+    notes: "极高佣金，但注册要求高"
+    
+  - name: "Ahrefs"
+    category: "SEO分析"
+    description: "专业的SEO和内容分析工具"
+    commission: "30-40% 月费佣金"
+    difficulty: "高"
+    url: "https://ahrefs.com"
+    affiliate_url: "https://ahrefs.com/affiliate"
+    priority: 4
+    notes: "SEO专家必备，高客单价"
+
+# 注册策略
+registration_strategy:
+  phase1:
+    name: "立即注册"
+    tools: ["GitHub Copilot", "ChatGPT Plus", "Midjourney"]
+    timeframe: "今天"
+    goal: "快速测试变现效果"
+    
+  phase2:
+    name: "本周完成"
+    tools: ["Jasper.ai", "Copy.ai", "Surfer SEO"]
+    timeframe: "3月4-7日"
+    goal: "建立高佣金组合"
+    
+  phase3:
+    name: "下周扩展"
+    tools: ["Canva Pro", "Notion AI", "Grammarly Premium"]
+    timeframe: "3月11-14日"
+    goal: "覆盖更多用户群体"
+    
+  phase4:
+    name: "长期目标"
+    tools: ["SEMrush", "Ahrefs"]
+    timeframe: "3月内"
+    goal: "获取极高佣金工具"
+
+# 佣金目标
+commission_goals:
+  month1: "$500-1000"
+  month3: "$2000-5000"
+  month6: "$5000-10000+"
+  primary_source: "月费佣金（20-50%）"
+  secondary_source: "一次性佣金、广告收入"
+
+# 跟踪要求
+tracking:
+  required: "UTM参数、专用链接"
+  analytics: "Google Analytics + 自定义跟踪"
+  reporting: "每日收入报告"
+  optimization: "基于数据调整推荐策略"
